@@ -1,0 +1,163 @@
+ {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  position: relative;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  text-decoration: underline blue;
+}
+
+main {
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+
+.enterTheMealDetails, .allCalculations {
+  width:49%;
+  height:500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.myEarningsInfo, .customerCharges, .enterTheMealDetails {
+  border: 2px solid gray;
+}
+
+.customerCharges, .myEarningsInfo {
+  width: 100%;
+  height: 49%;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right:auto;
+  text-align: right;
+  padding: 3px;
+}
+
+.myEarningsInfoSection {
+  text-align: center;
+  width: 75%;
+}
+
+.horizontalLine {
+  border-bottom: 3px solid black;
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+
+.resetAllButton {
+  position: absolute;
+  top: 105%;
+  left: 83%;
+  width: 16%;
+  margin:0px;
+}
+
+button {
+  margin: 10px;
+  padding: 5px;
+  font-size: 12px;
+  box-shadow: 5px 8px black;
+  background-color: transparent;
+}
+
+button:hover {
+  background-color: blue;
+  border: blue;
+}
+
+h2 {
+  height: 35px;
+  width: 100%;
+  text-align:center;
+  border-bottom: 2px solid grey;
+  font-size: 12px;
+  margin:0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+h2:hover {
+  background-color: blue;
+}
+
+label {
+  display:block;
+}
+
+input {
+  width: 40%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.enterTheMealDetailsCalculator {
+  position: relative;
+  top: -40%;
+}
+
+fieldset {
+  text-align: left;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  border: none;
+}
+
+
+span {
+  margin: 5px;
+}
+
+.submitButton {
+  width: 50px;
+} 
+.resetCalcButton {
+  width: 50px;
+}
+
+.mealDetailButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media screen and (min-width: 450px){
+
+h2 {
+  font-size: 16px;
+}
+
+.enterTheMealDetails, .allCalculations {
+  font-size: 14px;
+}
+
+}
+
+@media screen and (min-width: 700px){
+  h2 {
+    font-size: 22px;
+  }
+  .enterTheMealDetails, .allCalculations {
+    font-size: 18px;
+  }
+  
+}
